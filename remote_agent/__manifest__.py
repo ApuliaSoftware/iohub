@@ -1,0 +1,28 @@
+# -*- encoding: utf-8 -*-
+{
+    'name': 'Odoo remote agent',
+    'version': '3.1',
+    'author': 'Odooist',
+    'maintainer': 'Odooist',
+    'support': 'odooist@gmail.com',
+    'license': 'LGPL-3',
+    'category': 'Tools',
+    'summary': 'Connect from Odoo to remote agents',
+    'description': "",
+    'depends': ['mail', 'bus'],
+    'data': [
+        'security/common.xml',
+        'security/user.xml',
+        'security/agent.xml',
+        'security/admin.xml',
+        'views/resources.xml',
+        'views/agent.xml',
+        'views/agent_state.xml',
+        'views/ir_cron.xml',
+    ],
+    'demo': [],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+    'images': ['static/description/screenshot1.png'],
+}
